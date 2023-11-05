@@ -14,17 +14,20 @@
         <section class="hero">
             <div class="hero-wrapper">
                 <p class="main-text title">
-                    Creamos increibles invitaciones digitales para tu dia especial. 
+                    Creamos increibles invitaciones digitales para tu día especial. 
                 </p>
                 <p class="small-text">
                     Simplifica la planeacion de tu boda con nuestra plataforma de invitaciones digitales facil de usar.
                 </p>
                 <p class="small-text">Los invitados pueden facilmente confirmar su asistencia.</p>
-                <form class="form" action="">
-                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre..." required>
-                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo..." required>
-                    <input type="tel" name="phone" id="phone" placeholder="Ingresa tu telefono..." minlength="10" maxlength="10" required>
-                    <button type="submit">Contactenme</button>
+                <form class="form hero-form" action="">
+                    <input type="text" name="name" id="name-hero-form" class="input-hero-form" placeholder="Ingresa tu nombre..." maxlength="30" autocomplete="off" required>
+                    <input type="email" name="email" id="email-hero-form" class="input-hero-form" placeholder="Ingresa tu correo..." maxlength="40" autocomplete="off" required>
+                    <input type="tel" name="phone" id="phone-hero-form" class="input-hero-form" placeholder="Ingresa tu telefono..." minlength="10" autocomplete="off" maxlength="10" required>
+                    <button class="btn-submit hero-btn" id="btn-submit-hero-form" type="submit">
+                        <span class="text-btn-hero-form">Contactenme</span>
+                        <div class="spinner hide spinner-hero-btn"></div>
+                    </button>
                 </form>
                 <article>
                     <div class="top-comment">
@@ -134,15 +137,20 @@
                 <p>
                     “Usar Wedding Link para nuestras invitaciones de boda hizo que todo el proceso fuera eficiente y nos permitió centrarnos en otros aspectos de la planificación de nuestra boda”. -Daniel Cantabrana.
                 </p>
-                <form class="form" action="">
-                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre..." required>
-                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo..." required>
-                    <input type="tel" name="phone" id="phone" placeholder="Ingresa tu telefono..." minlength="10" maxlength="10" required>
-                    <button type="submit">Contactenme</button>
+                <form class="form joinus-form" action="">
+                    <input type="text" name="name" id="name-joinus-form" placeholder="Ingresa tu nombre..." autocomplete="off" required>
+                    <input type="email" name="email" id="email-joinus-form" placeholder="Ingresa tu correo..." autocomplete="off" required>
+                    <input type="tel" name="phone" id="phone-joinus-form" placeholder="Ingresa tu telefono..." autocomplete="off" minlength="10" maxlength="10" required>
+                    <button class="btn-submit joinus-btn" id="btn-submit-joinus-form" type="submit">
+                        <span class="text-btn-joinus-form">Contactenme</span>
+                        <div class="spinner hide spinner-joinus-btn"></div>
+                    </button>
                 </form>
             </div>
         </section>
     </main>
+
+    <script src="./assets/js/index.js"></script>
     
 </body>
 </html>
