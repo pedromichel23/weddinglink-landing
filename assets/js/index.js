@@ -11,6 +11,7 @@ const textBtnSubmitHeroForm = document.querySelector('.text-btn-hero-form')
 const textBtnSubmitJoinUsForm = document.querySelector('.text-btn-joinus-form')
 const spinnerHeroBtn = document.querySelector('.spinner-hero-btn')
 const spinnerJoinUsBtn = document.querySelector('.spinner-joinus-btn')
+const greetingsDialog = document.querySelector('#greetingsDialog');
 
 const urlTest = 'http://localhost:8080/lead'
 const url = 'https://www.weddinglink.io/lead'
@@ -54,8 +55,9 @@ function SendForm(url, name, email, phone, textBtn, spinner) {
         .catch(err => console.log(err))
         .then(response => {
             if (response.msg) {
-                console.log(response.msg)
-                console.log(response.lead)
+                if (response.msg == 'success') {
+                    greetingsDialog.showModal();
+                }
             }
     
             if(response.errors) {

@@ -384,6 +384,15 @@ p {
     padding: 2rem;
 }
 
+.main dialog h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.main dialog p {
+    padding-bottom: 1rem;
+}
+
 @media (min-width: 640px) {
     .title {
         font-size: 3.25rem;
