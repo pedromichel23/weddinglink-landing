@@ -393,6 +393,11 @@ p {
     padding-bottom: 1rem;
 }
 
+.main dialog button {
+    max-width: 358px;
+    margin: 0 auto;
+}
+
 @media (min-width: 640px) {
     .title {
         font-size: 3.25rem;
