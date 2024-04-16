@@ -13,12 +13,13 @@ const spinnerHeroBtn = document.querySelector('.spinner-hero-btn')
 const spinnerJoinUsBtn = document.querySelector('.spinner-joinus-btn')
 const greetingsDialog = document.querySelector('#greetingsDialog');
 
-const urlTest = 'http://localhost:8080/lead'
-const url = 'https://www.weddinglink.io/lead'
+//const urlTest = 'http://localhost:8080/lead'
+//const url = 'https://www.weddinglink.io/lead'
+const urlTest = 'http://localhost:8080/form/send'
 
 forms.forEach(form => {
     form.addEventListener('submit', (event) => {
-        event.preventDefault();
+        //event.preventDefault();
     })
 })
 

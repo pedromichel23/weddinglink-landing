@@ -17,6 +17,7 @@
     <main class="main">
         <section class="hero">
             <div class="hero-wrapper">
+                <a href="about">nostros</a>
                 <p class="main-text title">
                     Creamos increíbles invitaciones digitales para tu día especial.
                 </p>
