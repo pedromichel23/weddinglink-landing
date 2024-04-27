@@ -10,6 +10,8 @@ WORKDIR /var/www/html
 # Expone el puerto 80 para acceder a la aplicación
 EXPOSE 80
 
+RUN composer install
+
 # Comando para iniciar tu aplicación (puedes cambiar esto según cómo ejecutes tu aplicación)
 CMD php -S 0.0.0.0:80
 # CMD ["php", "-S", "0.0.0.0:80"]
