@@ -23,52 +23,52 @@ forms.forEach(form => {
     })
 })
 
-btnSubmitHeroForm.addEventListener('click', () => {
-    const {name, email, phone} = getInputsValues(inputNameHeroForm, inputEmailHeroForm, inputPhoneHeroForm);
-    SendForm(urlTest, name, email, phone, textBtnSubmitHeroForm, spinnerHeroBtn);
-    forms.forEach(form => {
-        if (form.classList.contains('hero-form')) {
-            form.reset();
-        }
-    })
-})
+// btnSubmitHeroForm.addEventListener('click', () => {
+//     const {name, email, phone} = getInputsValues(inputNameHeroForm, inputEmailHeroForm, inputPhoneHeroForm);
+//     SendForm(urlTest, name, email, phone, textBtnSubmitHeroForm, spinnerHeroBtn);
+//     forms.forEach(form => {
+//         if (form.classList.contains('hero-form')) {
+//             form.reset();
+//         }
+//     })
+// })
 
-btnSubmitJoinusForm.addEventListener('click', () => {
-    const {name, email, phone} = getInputsValues(inputNameJoinUsForm, inputEmailJoinUsForm, inputPhoneJoinUsForm);
-    SendForm(urlTest, name, email, phone, textBtnSubmitJoinUsForm, spinnerJoinUsBtn);
-    forms.forEach(form => {
-        if (form.classList.contains('joinus-form')) {
-            form.reset();
-        }
-    })
-})
+// btnSubmitJoinusForm.addEventListener('click', () => {
+//     const {name, email, phone} = getInputsValues(inputNameJoinUsForm, inputEmailJoinUsForm, inputPhoneJoinUsForm);
+//     SendForm(urlTest, name, email, phone, textBtnSubmitJoinUsForm, spinnerJoinUsBtn);
+//     forms.forEach(form => {
+//         if (form.classList.contains('joinus-form')) {
+//             form.reset();
+//         }
+//     })
+// })
 
-function SendForm(url, name, email, phone, textBtn, spinner) {
-    if (name && email && phone) {
-        textBtn.classList.add('hide')
-        spinner.classList.remove('hide')
-        fetch(url, {
-            method: 'POST',
-            body: JSON.stringify({name, email, phone}),
-            headers: { 'Content-Type': 'application/json'}
-        })
-        .then( res => res.json())
-        .catch(err => console.log(err))
-        .then(response => {
-            if (response.msg) {
-                if (response.msg == 'success') {
-                    greetingsDialog.showModal();
-                }
-            }
+// function SendForm(url, name, email, phone, textBtn, spinner) {
+//     if (name && email && phone) {
+//         textBtn.classList.add('hide')
+//         spinner.classList.remove('hide')
+//         fetch(url, {
+//             method: 'POST',
+//             body: JSON.stringify({name, email, phone}),
+//             headers: { 'Content-Type': 'application/json'}
+//         })
+//         .then( res => res.json())
+//         .catch(err => console.log(err))
+//         .then(response => {
+//             if (response.msg) {
+//                 if (response.msg == 'success') {
+//                     greetingsDialog.showModal();
+//                 }
+//             }
     
-            if(response.errors) {
-                window.alert(`Error: ${response.errors[0].msg}`)
-            }
-            textBtn.classList.remove('hide');
-            spinner.classList.add('hide');
-        })
-    }
-}
+//             if(response.errors) {
+//                 window.alert(`Error: ${response.errors[0].msg}`)
+//             }
+//             textBtn.classList.remove('hide');
+//             spinner.classList.add('hide');
+//         })
+//     }
+// }
 
 function getInputsValues(inputName, inputEmail, inputPhone) {
     return {

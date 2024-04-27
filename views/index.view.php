@@ -30,7 +30,7 @@
                     <p>Muy pronto te contactaremos para resolver todas tus dudas.</p>
                     <button id="btnCloseModal" onClick="this.parentElement.close()">Aceptar</button>
                 </dialog>
-                <form class="form hero-form" action="">
+                <form class="form hero-form" action="form/" method="POST">
                     <input type="text" name="name" id="name-hero-form" class="input-hero-form"
                         placeholder="Ingresa tu nombre..." maxlength="30" autocomplete="off" required>
                     <input type="email" name="email" id="email-hero-form" class="input-hero-form"

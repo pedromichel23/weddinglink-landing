@@ -1,8 +1,8 @@
 {
-    "name": "pmichel/wllanding",
+    "name": "pmichel/wedlanding",
     "autoload": {
         "psr-4": {
-            "Pmichel\\Wllanding\\": "src/"
+            "Pmichel\\Wedlanding\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,7 @@
             "email": "pedromichel23@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
 }

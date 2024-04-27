@@ -1,5 +1,7 @@
 <?php
 
+namespace Pmichel\Wedlanding\Models;
+
 class Router {
 
     protected $routes = [];
