@@ -1,7 +1,6 @@
 <?php
 
 //require 'Models/Router.php';
-namespace Pmichel\Wedlanding\Models;
 
 class Routes {
     protected $routes = [

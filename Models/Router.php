@@ -1,10 +1,12 @@
 <?php
 
-namespace Pmichel\Wedlanding\Models;
-
 class Router {
 
-    protected $routes = [];
+    protected $routes = [
+        '' => 'Views/index.view.php',
+        'about' => 'Controllers/about.php',
+        'form' => 'Controllers/formController.php',
+    ];
 
     public function register($routes) {
         $this->routes = $routes;
